@@ -10,21 +10,26 @@ public class ScannerDemo {
         boolean wahrheitswert=false;
         char buchstabe=' ';
 
-        Scanner tastatur = new Scanner(System.in); // Erzeugen eines Objekts der Klasse Scanner
+        Scanner uchikomi = new Scanner(System.in); // Erzeugen eines Objekts der Klasse Scanner
 
         System.out.print("Bitte geben Sie eine ganze Zahl ein: ");
+        ganzzahl = uchikomi.nextInt();
         System.out.print("Sie haben " + ganzzahl + " eingegeben!\n\n");
 
         System.out.print("Bitte geben Sie eine Zahl mit Nachkommastellen ein: ");
+        kommazahl = uchikomi.nextDouble();
         System.out.print("Sie haben " + kommazahl + " eingegeben!\n\n");
 
         System.out.print("Bitte geben Sie eine Wort ein : ");
+        wort = uchikomi.next();
         System.out.print("Sie haben '" + wort + "' eingegeben!\n\n");
 
         System.out.print("Bitte geben Sie einen Wahrheitswert ein (true / false): ");
+        wahrheitswert = uchikomi.nextBoolean();
         System.out.print("Sie haben '" + wahrheitswert + "' eingegeben!\n\n");
 
         System.out.print("Bitte geben Sie einen einzelnen Buchstaben ein: ");
+        buchstabe = uchikomi.next().charAt(0);
         System.out.print("Sie haben '" + buchstabe + "' eingegeben!\n");
        
         tastatur.close();
