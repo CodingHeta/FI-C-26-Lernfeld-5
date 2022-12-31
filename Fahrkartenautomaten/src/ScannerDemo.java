@@ -20,7 +20,7 @@ public class ScannerDemo {
         kommazahl = uchikomi.nextDouble();
         System.out.print("Sie haben " + kommazahl + " eingegeben!\n\n");
 
-        System.out.print("Bitte geben Sie eine Wort ein : ");
+        System.out.print("Bitte geben Sie ein Wort ein : ");
         wort = uchikomi.next();
         System.out.print("Sie haben '" + wort + "' eingegeben!\n\n");
 
