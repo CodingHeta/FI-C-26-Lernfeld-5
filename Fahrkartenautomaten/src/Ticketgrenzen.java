@@ -10,5 +10,8 @@ public class Ticketgrenzen {
         System.out.print("Geben Sie einen Preis in EUR ein: ");
         ticketpreis = inputKunde.nextDouble();
         System.out.println("Vielen Dank, Sie haben [" + ticketpreis + "] EUR eingegeben.");
+        System.out.print("Geben Sie die Anzahl der Tickets an: ");
+        anz_tickets = inputKunde.nextInt();
+        System.out.println("Vielen Dank, Sie haben [" + anz_tickets + "] Tickets eingegeben.");
     }
 }
