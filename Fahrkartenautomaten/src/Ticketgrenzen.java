@@ -13,5 +13,7 @@ public class Ticketgrenzen {
         System.out.print("Geben Sie die Anzahl der Tickets an: ");
         anz_tickets = inputKunde.nextInt();
         System.out.println("Vielen Dank, Sie haben [" + anz_tickets + "] Tickets eingegeben.");
+
+        inputKunde.close();
     }
 }

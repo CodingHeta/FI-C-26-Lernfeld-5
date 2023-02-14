@@ -1,3 +1,5 @@
+// Gehört zur Übungsreihe "METHODEN" =============
+
 public class Begruessung {
     /*
     Herzlich Willkommen!

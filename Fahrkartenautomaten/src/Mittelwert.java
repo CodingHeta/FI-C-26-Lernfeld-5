@@ -1,4 +1,5 @@
-// Gehört zur Übungsreihe "METHODEN"
+// Gehört zur Übungsreihe "METHODEN" =============
+
 public class Mittelwert {
     public static void main(String[] args) {
 
