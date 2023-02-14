@@ -77,7 +77,7 @@ public class Fahrkartenautomat {
         System.out.print("\nSie können den Betrag jetzt Bezahlen.\n");
         eingezahlt = uchikomi.nextDouble();
         differenz = eingezahlt - c;
-        System.out.printf("\nSie haben %.2f eingegeben. Die Differenz beträgt %.2f.\n", eingezahlt, differenz);
+        System.out.printf("\nSie haben einen Betrag i.H.v. %.2f eingegeben. Die Differenz beträgt %.2f.\n", eingezahlt, differenz);
 
         return differenz;
     }
