@@ -4,17 +4,17 @@ public class Fahrkartenautomat {
     public static void main(String[] args) {
         // -------- HAUPTPROGRAMM !!
         Scanner uchikomi = new Scanner(System.in);
-        System.out.println("Guten Tag!");
         double zuZahlen = 0;
 
         // hier werden die METHODEN Aufgerufen
         gruss();
         zuZahlen = bestellungErfassen(uchikomi);
+        karteBezahlen(uchikomi, zuZahlen);
 
         uchikomi.close();
     }
 
-    public static double bestellungErfassen (Scanner uchikomi) {
+    public static double bestellungErfassen(Scanner uchikomi) {
         double zuZahlen = 0;
         int anzTickets = 0;
         int wahl = 0;
@@ -53,7 +53,7 @@ public class Fahrkartenautomat {
         return zuZahlen;
     }
 
-    public static void gruss () {
+    public static void gruss() {
         System.out.println("Herzlich Willkommen!\n");
         System.out.println("Wählen Sie ihre Wunschfahrkarte für Berlin AB aus:\n");
         System.out.println("(1) - Kurzstrecke AB [2,00 EUR]");
@@ -62,7 +62,7 @@ public class Fahrkartenautomat {
         System.out.println("(4) - 4-Fahrten-Karte AB [9,40 EUR]");
     }
 
-    public static double berechneMittelwert (double a, double b) //Methodenkopf
+    public static double berechneMittelwert(double a, double b) //Methodenkopf
     
     {
         double z;
@@ -70,5 +70,15 @@ public class Fahrkartenautomat {
         return z;
     }
 
-    
+    public static double karteBezahlen(Scanner uchikomi, double c) {
+        double eingezahlt = 0;
+        double differenz = 0;
+        
+        System.out.print("\nSie können den Betrag jetzt Bezahlen.\n");
+        eingezahlt = uchikomi.nextDouble();
+        differenz = eingezahlt - c;
+        System.out.printf("\nSie haben %.2f eingegeben. Die Differenz beträgt %.2f.\n", eingezahlt, differenz);
+
+        return differenz;
+    }
 }
