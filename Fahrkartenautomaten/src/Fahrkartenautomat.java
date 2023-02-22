@@ -169,5 +169,6 @@ public class Fahrkartenautomat {
       //hh
       System.out.println("\nFahrschein wird ausgegeben");
       System.out.println("==========================\n");
+      // fancy Ladebalken implementieren!
     }
 }
